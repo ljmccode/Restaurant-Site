@@ -242,6 +242,47 @@ Module Styles
     }
 }
 
+/* **************** */
+/* Hero Medules */
+/* **************** */
+.hero {
+    text-align: center;
+}
+
+.hero-primary {
+    background-color: #594a42;
+    color:white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.hero-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 2.625em;
+}
+
+.hero-subtitle {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 1.500em;
+    font-weight: normal;
+}
+
+/* Top margin for a button if one exists */
+.hero-subtitle + button {
+    margin-top: 25px;
+}
+
+/* ********************** */
+/* Background Modules */
+/* ********************** */
+.bg-image {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
 /***************************
 ****************************
 Theme Styles
