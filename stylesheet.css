@@ -118,7 +118,7 @@ Layout Styles
   }
 
   .footer-divider {
-      border: solid white .3px;
+    border: solid white 0.3px;
   }
 }
 
@@ -136,7 +136,7 @@ Layout Styles
   }
 
   hr {
-      visibility: hidden;
+    visibility: hidden;
   }
 }
 /***************************
@@ -144,60 +144,103 @@ Layout Styles
 Module Styles
 ****************************
 ***************************/
-/* Button Modules */
-.btn {
-    display: inline-block;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    background-image: none;
-    border: 1px solid transparent;
-    cursor: pointer;
-    text-decoration: none;
-    padding: 12px 30px;
-    font-size: 1.313em;
-    font-weight: bold;
-    border-radius: 4px;
-    transition: all 0.3s ease 0s;
-  }
-  
-  .btn-primary {
-    background: #8dc63f;
-    border-color: #8dc63f;
-    color: white;
-  }
-  
-  .btn-primary:hover {
-    background: none;
-    border-color: white;
-    text-decoration: none;
-  }
-  
-  /* Header Modules */
-  .header-primary {
-    background: #9b8579;
-    text-align: center;
-    padding-top: 18px;
-    padding-bottom: 18px;
-  }
-  
-  /* Logo Modules */
-  /* overflow hidden will mask part of logo for mobile */
-  .logo {
-      overflow: hidden;
-      display: inline-block;
-  }
-  
-  .logo-primary {
-      width: 64px;
-      height: 64px;
-  }
-  
-  /* Logo will scale up to fill all possible space */
-  .logo-primary img {
-      height: 100%;
-  }
 
+/* ****************** */
+/* Button Modules */
+/* ****************** */
+.btn {
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-image: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-size: 1.313em;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-primary {
+  background: #8dc63f;
+  border-color: #8dc63f;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: none;
+  border-color: white;
+  text-decoration: none;
+}
+
+.btn-nav {
+  color: white;
+}
+
+.btn-toggle-menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+@media (min-width: 48em) {
+    .btn-toggle-menu {
+        display: none;
+    }
+}
+
+/* ****************** */
+/* Header Modules */
+/* ****************** */
+.header-primary {
+  background: #9b8579;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+/* **************** */
+/* Logo Modules */
+/* **************** */
+/* overflow hidden will mask part of logo for mobile */
+.logo {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.logo-primary {
+  width: 64px;
+  height: 64px;
+}
+
+/* Logo will scale up to fill all possible space */
+.logo-primary img {
+  height: 100%;
+}
+
+/* ********************** */
+/* Navigation Modules */
+/* ********************** */
+.nav > ul {
+  list-style: none;
+  padding: 0p;
+  margin: 0px;
+  margin-right: 40px;
+}
+
+.nav-primary {
+  margin-top: 35px;
+  display: none;
+}
+
+@media (min-width: 48em) {
+    .nav-primary {
+        display: block;
+    }
+}
 
 /***************************
 ****************************
