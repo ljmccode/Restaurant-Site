@@ -186,9 +186,41 @@ Module Styles
     right: 15px;
 }
 
+.btn-hero {
+    color: white;
+    background: none;
+    font-size: 1.750em;
+    padding: 15px 30px;
+    border: 1px solid white;
+}
+
+.btn-hero:hover {
+    color: #39B54A;
+    background: white;
+}
+
 @media (min-width: 48em) {
     .btn-toggle-menu {
         display: none;
+    }
+
+    .btn-primary {
+        font-size: 1.125em;
+        padding: 10px 15px
+    }
+
+    .btn-primary:hover {
+        stroke: 1px white;
+        animation: fade;
+    }
+
+    .btn-nav {
+      font-size: 1.125em;
+      padding: 10px 15px;
+    }
+
+    .btn-nav:hover {
+      text-decoration: none;
     }
 }
 
@@ -260,6 +292,7 @@ Module Styles
   opacity: 0.55;
 }
 
+
 .hero-body {
   position: relative;
 }
@@ -280,6 +313,52 @@ Module Styles
 /* Top margin for a button if one exists */
 .hero-subtitle + button {
     margin-top: 25px;
+}
+
+/* *********************** */
+/* Testimonial Modules */
+/* *********************** */
+.hero-secondary {
+  background-color: #594a42;
+  color:white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.hero-secondary.bg-image > img {
+opacity: 0.55;
+}
+
+.stars {
+    display: inline-block;
+    opacity: 1;
+}
+
+.star {
+  font-size: 72px;
+  float: left;
+  padding: 8px;
+}
+
+.testimonial {
+  clear: both;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  font-weight: normal;
+  line-height: 2em;
+  padding: 0px;
+  font-size: 20px;
+
+}
+
+@media (min-width: 48em) {
+    .testimonial-quote {
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 1.13em;
+  }
 }
 
 /* ********************** */
@@ -303,6 +382,46 @@ Module Styles
     min-width: 100%;
 }
 
+/* ********************** */
+/* Media Object Module */
+/* ********************** */
+.media {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.media-body p {
+    margin-bottom: 40px;
+}
+.media-item {
+    float:left;
+    margin-right: 30px;
+}
+
+.media-item i {
+    color: #594a42;
+    font-size: 5em;
+}
+
+.media, .media-body {
+  overflow: hidden;
+}
+
+.media-heading {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.media-body p {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+@media (min-width: 48em) {
+    .media {
+        padding: 40px;
+    }
+}
 /***************************
 ****************************
 Theme Styles
@@ -320,4 +439,7 @@ Theme Styles
 }
 .background-quaternary {
   background: #594a42; /*Brown*/
+}
+.background-quinary {
+  background: #e7e1d7; /*Tan/
 }
