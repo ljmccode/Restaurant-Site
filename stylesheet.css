@@ -338,6 +338,7 @@ opacity: 0.55;
   font-size: 72px;
   float: left;
   padding: 8px;
+  text-shadow: 3px 3px 8px black;
 }
 
 .testimonial {
